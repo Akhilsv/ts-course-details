@@ -4,16 +4,89 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
+
 		<link
 			rel="stylesheet"
-			
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		/>
 		<link type="text/css" href="./style.css" rel="stylesheet" />
+		<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+		<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 		<title>Document</title>
 	</head>
 	<body>
+		<!-- -------------------------------------------- -->
+		<div class="settings_sidebar">
+			<div class="side_conatiner">
+				<div class="side_header">
+					<p onclick="settingSideBar()">X</p>
+					<div class="logos">
+						<img src="/images/logo.png" alt="logo" />
+					</div>
+					<h1>Course Setting</h1>
+				</div>
+				<div class="dark_section">
+					<div class="text">
+						<p>
+							Dark Mode
+							<span>Beta</span>
+						</p>
+					</div>
+					<label class="switch">
+						<input type="checkbox" checked />
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<div class="theme_demo">
+					<div class="right_sec">
+						<img src="/images/download.png" alt="snpiiet" srcset="" />
+
+						<label>
+							<input type="checkbox" class="default__check" />
+							<span class="custom__check"></span>
+							Checkbox
+						</label>
+					</div>
+					<div class="left_sec">
+						<img src="/images/download.png" alt="snpiiet" srcset="" />
+						<label>
+							<input type="checkbox" class="default__check" />
+							<span class="custom__check"></span>
+							Checkbox
+						</label>
+					</div>
+				</div>
+				<div class="choice_section">
+					<div class="text">
+						<p>Save course history</p>
+					</div>
+					<label class="switch">
+						<input type="checkbox" checked />
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<div class="choice_section">
+					<div class="text">
+						<p>Announcement Emails</p>
+					</div>
+					<label class="switch">
+						<input type="checkbox" checked />
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<div class="choice_section">
+					<div class="text">
+						<p>Reminders</p>
+					</div>
+					<label class="switch">
+						<input type="checkbox" checked />
+						<span class="slider round"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<!-- //------------------------------------------------------- -->
 		<header>
 			<div class="left_side_header">
 				<div class="ham" onclick="displayCourseContentHandler()">
@@ -28,11 +101,21 @@
 						alt=""
 					/>
 				</div>
+				<p id="title_text_header">Basics of python</p>
 			</div>
 			<div class="right_side_header">
 				<progress max="100" value="25"></progress>
 				<h4>25%</h4>
-
+				<div class="setting_icon" onclick="settingSideBar()">
+					<img
+						src="https://img.icons8.com/external-xnimrodx-lineal-gradient-xnimrodx/64/000000/external-setting-advertising-xnimrodx-lineal-gradient-xnimrodx-3.png"
+					/>
+				</div>
+				<div class="setting_icon" id="back" onclick="settingSideBar()">
+					<img
+						src="https://img.icons8.com/ultraviolet/40/000000/circled-left-2.png"
+					/>
+				</div>
 				<div class="profile_avatar">
 					<img
 						src="https://avatars.githubusercontent.com/u/39455174?v=4"
@@ -602,113 +685,113 @@
 						<!--Feedback section-->
 						<div class="tabcontent" id="Feedback">
 							<section class="main-content">
-			<div class="row">
-				<div class="rating-card">
-					<div class="text-center">
-						<h4>Rating Overview</h4>
-						<br />
-						<h1 class="rating-number">4.3<small>/5</small></h1>
-						<div class="rating-stars d-inline-block position-relative mr-2">
-							<img src="images/grey-star.svg" alt="" />
-							<div class="filled-star" style="width: 86%"></div>
-						</div>
-						<div class="text-muted">2,145 ratings</div>
-					</div>
-					<div class="rating-divided">
-						<div class="rating-progress">
-							<span class="rating-grade"
-								>5 <img src="./images/star.svg" alt=""
-							/></span>
-							<div class="progress">
-								<div
-									class="progress-bar bg-warning"
-									role="progressbar"
-									style="width: 75%"
-									aria-valuenow="75"
-									aria-valuemin="0"
-									aria-valuemax="100"
-								></div>
-							</div>
-							<span class="rating-value">1,985</span>
-						</div>
-						<div class="rating-progress">
-							<span class="rating-grade"
-								>4 <img src="./images/star.svg" alt=""
-							/></span>
-							<div class="progress">
-								<div
-									class="progress-bar bg-warning"
-									role="progressbar"
-									style="width: 10%"
-									aria-valuenow="10"
-									aria-valuemin="0"
-									aria-valuemax="100"
-								></div>
-							</div>
-							<span class="rating-value">356</span>
-						</div>
-						<div class="rating-progress">
-							<span class="rating-grade"
-								>3 <img src="./images/star.svg" alt=""
-							/></span>
-							<div class="progress">
-								<div
-									class="progress-bar bg-warning"
-									role="progressbar"
-									style="width: 8%"
-									aria-valuenow="8"
-									aria-valuemin="0"
-									aria-valuemax="100"
-								></div>
-							</div>
-							<span class="rating-value">130</span>
-						</div>
-						<div class="rating-progress">
-							<span class="rating-grade"
-								>2 <img src="./images/star.svg" alt=""
-							/></span>
-							<div class="progress">
-								<div
-									class="progress-bar bg-warning"
-									role="progressbar"
-									style="width: 6%"
-									aria-valuenow="6"
-									aria-valuemin="0"
-									aria-valuemax="100"
-								></div>
-							</div>
-							<span class="rating-value">90</span>
-						</div>
-						<div class="rating-progress">
-							<span class="rating-grade"
-								>1 <img src="./images/star.svg" alt=""
-							/></span>
-							<div class="progress">
-								<div
-									class="progress-bar bg-warning"
-									role="progressbar"
-									style="width: 3%"
-									aria-valuenow="3"
-									aria-valuemin="0"
-									aria-valuemax="100"
-								></div>
-							</div>
-							<span class="rating-value">33</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
+								<div class="row">
+									<div class="rating-card">
+										<div class="text-center">
+											<h4>Rating Overview</h4>
+											<br />
+											<h1 class="rating-number">4.3<small>/5</small></h1>
+											<div
+												class="rating-stars d-inline-block position-relative mr-2"
+											>
+												<img src="images/grey-star.svg" alt="" />
+												<div class="filled-star" style="width: 86%"></div>
+											</div>
+											<div class="text-muted">2,145 ratings</div>
+										</div>
+										<div class="rating-divided">
+											<div class="rating-progress">
+												<span class="rating-grade"
+													>5 <img src="./images/star.svg" alt=""
+												/></span>
+												<div class="progress">
+													<div
+														class="progress-bar bg-warning"
+														role="progressbar"
+														style="width: 75%"
+														aria-valuenow="75"
+														aria-valuemin="0"
+														aria-valuemax="100"
+													></div>
+												</div>
+												<span class="rating-value">1,985</span>
+											</div>
+											<div class="rating-progress">
+												<span class="rating-grade"
+													>4 <img src="./images/star.svg" alt=""
+												/></span>
+												<div class="progress">
+													<div
+														class="progress-bar bg-warning"
+														role="progressbar"
+														style="width: 10%"
+														aria-valuenow="10"
+														aria-valuemin="0"
+														aria-valuemax="100"
+													></div>
+												</div>
+												<span class="rating-value">356</span>
+											</div>
+											<div class="rating-progress">
+												<span class="rating-grade"
+													>3 <img src="./images/star.svg" alt=""
+												/></span>
+												<div class="progress">
+													<div
+														class="progress-bar bg-warning"
+														role="progressbar"
+														style="width: 8%"
+														aria-valuenow="8"
+														aria-valuemin="0"
+														aria-valuemax="100"
+													></div>
+												</div>
+												<span class="rating-value">130</span>
+											</div>
+											<div class="rating-progress">
+												<span class="rating-grade"
+													>2 <img src="./images/star.svg" alt=""
+												/></span>
+												<div class="progress">
+													<div
+														class="progress-bar bg-warning"
+														role="progressbar"
+														style="width: 6%"
+														aria-valuenow="6"
+														aria-valuemin="0"
+														aria-valuemax="100"
+													></div>
+												</div>
+												<span class="rating-value">90</span>
+											</div>
+											<div class="rating-progress">
+												<span class="rating-grade"
+													>1 <img src="./images/star.svg" alt=""
+												/></span>
+												<div class="progress">
+													<div
+														class="progress-bar bg-warning"
+														role="progressbar"
+														style="width: 3%"
+														aria-valuenow="3"
+														aria-valuemin="0"
+														aria-valuemax="100"
+													></div>
+												</div>
+												<span class="rating-value">33</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<h2>Reviews</h2>
+							<p>See what other saying about this course</p>
 							<div class="feedback_container">
-
 								<div class="feedback_item">
 									<div class="feedback_right_sec">
 										<div class="profile">
 											<img src="/icons8-avatar.svg" alt="icon" />
 										</div>
-									</div>
-									<div class="feedback_left_sec">
 										<h1>Akhil</h1>
 										<div class="rating_holder">
 											<img
@@ -732,14 +815,32 @@
 												alt="unfilled-star"
 											/>
 										</div>
-										
-										<p>Spiegazione chiara</p>
-										<p>Was this review helpful?</p>
 										<div class="like_holder">
-											<img src="https://cdn-icons-png.flaticon.com/512/6619/6619136.png" alt="">
-											<img src="https://cdn-icons.flaticon.com/png/512/1634/premium/1634070.png?token=exp=1649258665~hmac=25a815aab94af885d3470191bfabc584" alt="">
-											<a href="###">Report</a>
+											<div class="svg_holder">
+												<img src="./images/like.svg" alt="" />
+												<p>Like</p>
+											</div>
+											<div class="svg_holder">
+												<img src="./images/dislike.svg" alt="" />
+												<p>Unlike</p>
+											</div>
+											<div class="svg_holder">
+												<img src="./images/report.svg" alt="" />
+												<p>Report</p>
+											</div>
 										</div>
+									</div>
+
+									<div class="feedback_left_sec">
+										<h1>Review</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Soluta animi quis, voluptatibus non unde illum distinctio
+											fuga sed delectus facere quae iure doloremque nisi dolorem
+											voluptatum quidem ratione ipsum necessitatibuss,
+											voluptatibus non unde illum distinctio fuga se s,
+											voluptatibus non unde illum distinctio fuga se?
+										</p>
 									</div>
 								</div>
 								<div class="feedback_item">
@@ -747,8 +848,6 @@
 										<div class="profile">
 											<img src="/icons8-avatar.svg" alt="icon" />
 										</div>
-									</div>
-									<div class="feedback_left_sec">
 										<h1>Akhil</h1>
 										<div class="rating_holder">
 											<img
@@ -772,17 +871,100 @@
 												alt="unfilled-star"
 											/>
 										</div>
-										
-										<p>Spiegazione chiara</p>
-										<p>Was this review helpful?</p>
 										<div class="like_holder">
-											<img src="https://cdn-icons-png.flaticon.com/512/6619/6619136.png" alt="">
-											<img src="https://cdn-icons.flaticon.com/png/512/1634/premium/1634070.png?token=exp=1649258665~hmac=25a815aab94af885d3470191bfabc584" alt="">
-											<a href="###">Report</a>
+											<div class="svg_holder">
+												<img src="./images/like.svg" alt="" />
+												<p>Like</p>
+											</div>
+											<div class="svg_holder">
+												<img src="./images/dislike.svg" alt="" />
+												<p>Unlike</p>
+											</div>
+											<div class="svg_holder">
+												<img src="./images/report.svg" alt="" />
+												<p>Report</p>
+											</div>
 										</div>
+									</div>
+
+									<div class="feedback_left_sec">
+										<h1>Review</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Soluta animi quis, voluptatibus non unde illum distinctio
+											fuga sed delectus facere quae iure doloremque nisi dolorem
+											voluptatum quidem ratione ipsum necessitatibuss,
+											voluptatibus non unde illum distinctio fuga se s,
+											voluptatibus non unde illum distinctio fuga se?
+										</p>
+									</div>
+								</div>
+								<div class="feedback_item">
+									<div class="feedback_right_sec">
+										<div class="profile">
+											<img src="/icons8-avatar.svg" alt="icon" />
+										</div>
+										<h1>Akhil</h1>
+										<div class="rating_holder">
+											<img
+												src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+												alt="filled-star"
+											/>
+											<img
+												src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+												alt="filled-star"
+											/>
+											<img
+												src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+												alt="filled-star"
+											/>
+											<img
+												src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+												alt="filled-star"
+											/>
+											<img
+												src="https://cdn-icons-png.flaticon.com/512/1828/1828970.png"
+												alt="unfilled-star"
+											/>
+										</div>
+										<div class="like_holder">
+											<div class="svg_holder">
+												<img src="./images/like.svg" alt="" />
+												<p>Like</p>
+											</div>
+											<div class="svg_holder">
+												<img src="./images/dislike.svg" alt="" />
+												<p>Unlike</p>
+											</div>
+											<div class="svg_holder">
+												<img src="./images/report.svg" alt="" />
+												<p>Report</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="feedback_left_sec">
+										<h1>Review</h1>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Soluta animi quis, voluptatibus non unde illum distinctio
+											fuga sed delectus facere quae iure doloremque nisi dolorem
+											voluptatum quidem ratione ipsum necessitatibuss,
+											voluptatibus non unde illum distinctio fuga se s,
+											voluptatibus non unde illum distinctio fuga se?
+										</p>
 									</div>
 								</div>
 							</div>
+							<h2>Add Reviews</h2>
+
+							<div class="comment_input">
+								<div class="profile">
+									<img src="/icons8-avatar.svg" alt="prifile" />
+								</div>
+								<input type="text" />
+							</div>
+							<button>Submit</button>
 						</div>
 					</div>
 				</div>
@@ -1149,5 +1331,28 @@
 				}
 			});
 		};
+	</script>
+	<script>
+		const settingSideBar = () => {
+			const body = document.querySelector('body');
+			const section = document.querySelector('.settings_sidebar');
+			const sidesection = document.querySelector('.side_conatiner');
+			if (section.style.right == '0%') {
+				body.style.overflow = 'auto';
+				section.style.right = '-100%';
+			} else {
+				body.style.overflow = 'hidden';
+				section.style.right = '0%';
+			}
+		};
+	</script>
+	<script>
+		tippy('.setting_icon', {
+			content: 'Account settings',
+			animation: 'fade',
+		});
+		tippy('#back', {
+			content: 'Back to course info',
+		});
 	</script>
 </html>
