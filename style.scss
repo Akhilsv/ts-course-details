@@ -1122,7 +1122,7 @@ header {
 		margin-left: 65px;
 		color: #fff;
 		cursor: pointer;
-		background: #4588E5;
+		background: #4588e5;
 		transition: all 0.5s ease;
 		@media (max-width: 700px) {
 			font-size: 0.8rem;
@@ -1181,8 +1181,13 @@ header {
 		background: #e8e8e8;
 		padding: 20px;
 		@media (max-width: 1200px) {
+			min-width: 200px;
+
 			width: 100%;
 			min-height: 200px;
+		}
+		@media (max-width: 700px) {
+			flex-direction: column;
 		}
 		.feedback_right_sec {
 			display: flex;
@@ -1192,6 +1197,9 @@ header {
 			width: 40%;
 			height: 100%;
 			margin-right: 25px;
+			@media (max-width: 700px) {
+				width: 70%;
+			}
 			h1 {
 				margin: 10px 0;
 			}
@@ -1262,12 +1270,12 @@ header {
 		margin: 30px auto;
 		width: 95%;
 		@media (max-width: 700px) {
+			width: 100%;
 			margin: 30px 0;
 		}
 	}
 	.container {
 		width: 100%;
-		background: red;
 	}
 	.row {
 		margin: 0 !important;
@@ -1281,7 +1289,6 @@ header {
 		justify-content: space-between;
 		@media (max-width: 800px) {
 			flex-direction: column;
-			width: 95%;
 			padding: 0;
 		}
 	}

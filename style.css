@@ -1494,7 +1494,7 @@ header .setting_icon img {
   margin-left: 65px;
   color: #fff;
   cursor: pointer;
-  background: #4588E5;
+  background: #4588e5;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -1587,8 +1587,18 @@ header .setting_icon img {
 
 @media (max-width: 1200px) {
   .feedback_container .feedback_item {
+    min-width: 200px;
     width: 100%;
     min-height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .feedback_container .feedback_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1609,6 +1619,12 @@ header .setting_icon img {
   width: 40%;
   height: 100%;
   margin-right: 25px;
+}
+
+@media (max-width: 700px) {
+  .feedback_container .feedback_item .feedback_right_sec {
+    width: 70%;
+  }
 }
 
 .feedback_container .feedback_item .feedback_right_sec h1 {
@@ -1718,13 +1734,13 @@ header .setting_icon img {
 
 @media (max-width: 700px) {
   .tabcontent .main-content {
+    width: 100%;
     margin: 30px 0;
   }
 }
 
 .tabcontent .container {
   width: 100%;
-  background: red;
 }
 
 .tabcontent .row {
@@ -1752,7 +1768,6 @@ header .setting_icon img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 95%;
     padding: 0;
   }
 }
