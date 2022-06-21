@@ -1887,4 +1887,137 @@ header .setting_icon img {
   clear: both;
   display: table;
 }
+
+.course_info {
+  width: 100%;
+  height: 300px;
+}
+
+.course_info .course_info_header {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+.course_info .course_info_header .course_info_avatar {
+  width: 100px;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.course_info .course_info_header .course_info_avatar img {
+  width: 70px;
+  height: 70px;
+}
+
+.course_info .course_info_header .course_info_header_right {
+  width: 90%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.course_info .course_info_header .course_info_header_right h1 {
+  margin: 0 !important;
+}
+
+.course_info .course_info_header .course_info_header_right p {
+  font-size: 0.9rem;
+  margin: 0 !important;
+}
+
+.course_info .course_info_controls {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.course_info .course_info_controls img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.resource_section {
+  width: 100%;
+}
+
+.resource_section h1 {
+  font-size: 1.3rem !important;
+}
+
+.resource_section .resource_item {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resource_section .resource_item .pdf_details_holder {
+  width: 100%;
+  background: #8b8b8b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resource_section .resource_item .pdf_details_holder .pdf_details_right {
+  width: 80%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 /*# sourceMappingURL=style.css.map */

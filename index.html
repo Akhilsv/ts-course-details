@@ -199,8 +199,7 @@
 
 					<div class="tab_section">
 						<div class="tab">
-								
-							<button class="tablinks" id="defaultOpen"  onclick="openTab(event, 'Course')">
+							<button class="tablinks" onclick="openTab(event, 'Course')">
 								Course Info
 							</button>
 							<button class="tablinks" onclick="openTab(event, 'Q&A')">
@@ -212,16 +211,62 @@
 							>
 								Announcements
 							</button>
-							<button
-								class="tablinks"
-								onclick="openTab(event, 'Feedback')"
-							>
+							<button class="tablinks" onclick="openTab(event, 'Feedback')">
 								Feedback
 							</button>
+							<button
+								class="tablinks"
+								id="defaultOpen"
+								onclick="openTab(event, 'Resource')"
+							>
+								Resource
+							</button>
+
+							<button class="tablinks" onclick="openTab(event, 'Grade')">
+								Grade
+							</button>
 						</div>
+
 						<!-- Course info  section-->
 						<div class="tabcontent" id="Course">
-							<h1>Course Info</h1>
+							<div class="course_info">
+								<div class="course_info_header">
+									<div class="course_info_avatar">
+										<img src="/icons8-avatar.svg" alt="icon" />
+									</div>
+									<div class="course_info_header_right">
+										<h1>Ajay Tech</h1>
+										<p>Lorem ipsum dolor, sit amet consectetur adipisicin</p>
+									</div>
+								</div>
+								<div class="course_info_controls">
+									<img
+										src="https://i.pinimg.com/originals/20/9b/d8/209bd859c265e7ffc4bfeb75877b23f7.png"
+									/>
+									<img
+										src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2plMCOHyLkE8ZJE0sEWh3KYGStc-gH7KKt64a5Rb4WFPlt5fj0E-JdcYmRqKNE4gKGQQ&usqp=CAU"
+									/>
+								</div>
+								<div class="course_info_details">
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Numquam esse voluptatum asperiores recusandae tenetur porro
+										culpa obcaecati facilis, mollitia, velit voluptatibus quae
+										tempore placeat? Aliquam molestias obcaecati impedit. Vero,
+										incidunt?
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Illo tenetur veniam amet voluptas facere odio nulla, maxime
+										tempore modi, porro itaque, cumque dolor sit eos dolore quae
+										molestiae inventore nostrum. Lorem ipsum dolor sit, amet
+										consectetur adipisicing elit. Autem recusandae ratione
+										dolorem ipsum exercitationem corrupti, consectetur nihil
+										magni veritatis, ipsam et! Ut est distinctio assumenda
+										mollitia, quibusdam voluptatum maxime similique!
+									</p>
+								</div>
+							</div>
 						</div>
 
 						<!-- Q&A section -->
@@ -682,6 +727,7 @@
 								</div>
 							</div>
 						</div>
+
 						<!--Feedback section-->
 						<div class="tabcontent" id="Feedback">
 							<section class="main-content">
@@ -965,6 +1011,27 @@
 								<input type="text" />
 							</div>
 							<button>Submit</button>
+						</div>
+						<!--Resource section-->
+						<div class="tabcontent" id="Resource">
+							<div class="resource_section">
+								<h1>PDFs</h1>
+								<div class="resource_item">
+									<h1>Week 1:</h1>
+									<div class="pdf_details_holder">
+										<div class="pdf_icon"></div>
+										<div class="pdf_details_right">
+											<h1>asddasdaa a fdasf asfsaff</h1>
+											<p>PDF File</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--Grade section-->
+						<div class="tabcontent" id="Grade">
+							<h2>Grade</h2>
 						</div>
 					</div>
 				</div>

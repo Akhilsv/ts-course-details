@@ -1388,3 +1388,85 @@ header {
 		}
 	}
 }
+
+.course_info {
+	width: 100%;
+	height: 300px;
+	.course_info_header {
+		width: 100%;
+		height: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 10px 0;
+		.course_info_avatar {
+			width: 100px;
+			height: 90%;
+			// display: grid;
+			// place-items: center;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			img {
+				width: 70px;
+				height: 70px;
+			}
+		}
+		.course_info_header_right {
+			width: 90%;
+			height: 70%;
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+			justify-content: space-around;
+			h1 {
+				margin: 0 !important;
+			}
+			p {
+				font-size: 0.9rem;
+				margin: 0 !important;
+			}
+		}
+	}
+	.course_info_controls {
+		width: 100%;
+		height: 50px;
+		cursor: pointer;
+		img {
+			width: 30px;
+			height: 30px;
+			margin-right: 20px;
+		}
+	}
+	.course_info_details {
+	}
+}
+.resource_section {
+	width: 100%;
+	h1 {
+		font-size: 1.3rem !important;
+	}
+	.resource_item {
+		width: 100%;
+		height: 120px;
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-direction: column;
+		.pdf_details_holder {
+			width: 100%;
+			background: rgb(139, 139, 139);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.pdf_details_right {
+				width: 80%;
+				height: 50%;
+				display: flex;
+				justify-content: space-around;
+				align-items: flex-start;
+				flex-direction: column;
+			}
+		}
+	}
+}
