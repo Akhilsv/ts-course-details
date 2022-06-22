@@ -1975,7 +1975,48 @@ header .setting_icon img {
 
 .resource_section .resource_item {
   width: 100%;
-  height: 120px;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0;
+}
+
+.resource_section .resource_item h6 {
+  margin: 10px 0;
+}
+
+.resource_section .resource_item .pdf_details_holder {
+  width: 100%;
+  background: #faf9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.resource_section .resource_item .pdf_details_holder .pdf_icon img {
+  width: 70px;
+  height: 70px;
+}
+
+.resource_section .resource_item .pdf_details_holder .pdf_details_right {
+  width: 85%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1990,9 +2031,44 @@ header .setting_icon img {
           flex-direction: column;
 }
 
-.resource_section .resource_item .pdf_details_holder {
+.resource_section .resource_item .pdf_details_holder .pdf_details_right h1 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.resource_section .resource_item .pdf_details_holder .pdf_details_right p {
+  color: #5f5f5f;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+#Grade .accordion1 {
+  background-color: #f4f4f4;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
   width: 100%;
-  background: #8b8b8b;
+  border: none;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 600;
+  color: #000;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#Grade .accordion1 div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2004,20 +2080,152 @@ header .setting_icon img {
           justify-content: space-between;
 }
 
-.resource_section .resource_item .pdf_details_holder .pdf_details_right {
-  width: 80%;
-  height: 50%;
+#Grade .accordion1 img {
+  width: 60px;
+  height: 35px;
+}
+
+#Grade .accordion1:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+#Grade .active:after {
+  content: '\2212';
+}
+
+#Grade .panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  border: solid #dfdfdf 1px;
+}
+
+#Grade .panel .panel_left {
+  width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 20px;
+}
+
+#Grade .panel .panel_left .item {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: solid 1px #000;
+}
+
+#Grade .panel .panel_left .item h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0 0px 0 0;
+  width: 100px;
+}
+
+#Grade .panel .panel_left .item .check {
+  -webkit-appearance: none;
+  /*hides the default checkbox*/
+  height: 20px;
+  width: 20px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background-color: #ffffff;
+  font-weight: 600;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white;
+  border-radius: 50%;
+  padding: 3px;
+  outline: none;
+  border: solid 1px #0e9700;
+}
+
+#Grade .panel .panel_left .item .check:checked {
+  background-color: #0e9700;
+}
+
+#Grade .panel .panel_left .item .check:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#Grade .panel .panel_right {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#Grade .panel .panel_right .item {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Grade .panel .panel_right .item h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0 0px 0 0;
+  width: 100px;
+}
+
+#Grade .panel .panel_right .item h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0 0px 0 0;
+  color: #131313;
+  width: 150px;
 }
 /*# sourceMappingURL=style.css.map */

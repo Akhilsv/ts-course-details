@@ -1448,24 +1448,185 @@ header {
 	}
 	.resource_item {
 		width: 100%;
-		height: 120px;
+		height: 130px;
 		display: flex;
 		justify-content: space-around;
 		align-items: flex-start;
 		flex-direction: column;
+		margin: 20px 0;
+		h6 {
+			margin: 10px 0;
+		}
 		.pdf_details_holder {
 			width: 100%;
-			background: rgb(139, 139, 139);
+			background: rgb(250, 249, 249);
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: space-around;
+			padding: 10px;
+			.pdf_icon {
+				img {
+					width: 70px;
+					height: 70px;
+				}
+			}
 			.pdf_details_right {
-				width: 80%;
-				height: 50%;
+				width: 85%;
+				height: 90%;
 				display: flex;
 				justify-content: space-around;
 				align-items: flex-start;
 				flex-direction: column;
+				h1 {
+					font-size: 1rem;
+					margin: 0;
+				}
+				p {
+					color: rgb(95, 95, 95);
+					font-size: 0.9rem;
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+#Grade {
+	.accordion1 {
+		background-color: #f4f4f4;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		display: flex;
+		margin: 10px 0;
+		align-items: center;
+		justify-content: space-between;
+		div {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		font-weight: 600;
+		color: #000;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		img {
+			width: 60px;
+			height: 35px;
+		}
+	}
+
+	.active,
+	.accordion1:hover {
+		// background-color: #ccc;
+	}
+
+	.accordion1:after {
+		content: '\002B';
+		color: #777;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+
+	.active:after {
+		content: '\2212';
+	}
+
+	.panel {
+		padding: 0 18px;
+		background-color: white;
+		overflow: hidden;
+		display: none;
+		align-items: center;
+		justify-content: space-between;
+		transition: max-height 0.2s ease-out;
+		border: solid rgb(223, 223, 223) 1px;
+		.panel_left {
+			width: 50%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			padding: 20px;
+			.item {
+				width: 100%;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-right: solid 1px #000;
+
+				h3 {
+					font-size: 0.9rem;
+					font-weight: 500;
+					margin: 0 0px 0 0;
+					width: 100px;
+				}
+				.check {
+					-webkit-appearance: none; /*hides the default checkbox*/
+					height: 20px;
+					width: 20px;
+					transition: 0.1s;
+					background-color: #ffffff;
+					font-weight: 600;
+					display: grid;
+					place-items: center;
+					color: white;
+					border-radius: 50%;
+					padding: 3px;
+					outline: none;
+					border: solid 1px #0e9700;
+				}
+
+				.check:checked {
+					background-color: #0e9700;
+				}
+
+				.check:before {
+				}
+				.check:checked:before {
+				}
+
+				.check:hover {
+					cursor: pointer;
+					opacity: 0.8;
+				}
+			}
+		}
+		.panel_right {
+			width: 50%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: column;
+			.item {
+				width: 100%;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				h3 {
+					font-size: 0.9rem;
+					font-weight: 500;
+					margin: 0 0px 0 0;
+					width: 100px;
+				}
+				h4{
+					font-size: 0.8rem;
+					font-weight: 500;
+					margin: 0 0px 0 0;
+					color:rgb(19, 19, 19);
+					width: 150px;
+
+				}
 			}
 		}
 	}
